@@ -1,0 +1,6 @@
+framework module Pods_Mesto {
+  umbrella header "Pods-Mesto-umbrella.h"
+
+  export *
+  module * { export * }
+}

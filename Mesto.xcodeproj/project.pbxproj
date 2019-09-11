@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		136CCC3A2C22D48111412D21 /* Pods_Mesto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612052F7455B325F304C0542 /* Pods_Mesto.framework */; };
+		176B26242254B1FA00E34D18 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 176B26232254B1FA00E34D18 /* LocationService.m */; };
+		176B26262254FB8300E34D18 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 176B26252254FB8300E34D18 /* Podfile */; };
+		17888C34225231DD00FEDECC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17888C33225231DD00FEDECC /* AppDelegate.m */; };
+		17888C37225231DD00FEDECC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17888C36225231DD00FEDECC /* ViewController.m */; };
+		17888C3A225231DD00FEDECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17888C38225231DD00FEDECC /* Main.storyboard */; };
+		17888C3C225231DE00FEDECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17888C3B225231DE00FEDECC /* Assets.xcassets */; };
+		17888C3F225231DE00FEDECC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17888C3D225231DE00FEDECC /* LaunchScreen.storyboard */; };
+		17888C42225231DE00FEDECC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17888C41225231DE00FEDECC /* main.m */; };
+		17888C4C225231DE00FEDECC /* MestoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17888C4B225231DE00FEDECC /* MestoTests.m */; };
+		17888C57225231DE00FEDECC /* MestoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17888C56225231DE00FEDECC /* MestoUITests.m */; };
+		17888C662252436B00FEDECC /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17888C652252436B00FEDECC /* BaseView.m */; };
+		17888C73225256C400FEDECC /* RestaurantsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17888C72225256C400FEDECC /* RestaurantsTableViewController.m */; };
+		17888C772252570000FEDECC /* RestaurantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17888C762252570000FEDECC /* RestaurantTableViewCell.m */; };
+		17888C7C22525A4C00FEDECC /* LocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17888C7B22525A4C00FEDECC /* LocationView.m */; };
+		17888C7F22525BFC00FEDECC /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17888C7E22525BFC00FEDECC /* LocationViewController.m */; };
+		17D565582255F10400CFE0B3 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D565572255F10400CFE0B3 /* Test.swift */; };
+		17D5655B2255FF9000CFE0B3 /* ServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D5655A2255FF9000CFE0B3 /* ServerController.m */; };
+		17D5655E225601EA00CFE0B3 /* AFJSONRequestSerializer+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D5655D225601EA00CFE0B3 /* AFJSONRequestSerializer+Additions.m */; };
+		17D56561225638A900CFE0B3 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D56560225638A900CFE0B3 /* NavigationController.m */; };
+		17D5656422573F2E00CFE0B3 /* AuthenticatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D5656322573F2E00CFE0B3 /* AuthenticatedController.m */; };
+		17D56569225741BB00CFE0B3 /* RestaurantsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D56568225741BB00CFE0B3 /* RestaurantsController.m */; };
+		17D5656D225780B600CFE0B3 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D5656C225780B600CFE0B3 /* Restaurant.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17888C48225231DE00FEDECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17888C27225231DD00FEDECC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17888C2E225231DD00FEDECC;
+			remoteInfo = Mesto;
+		};
+		17888C53225231DE00FEDECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17888C27225231DD00FEDECC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17888C2E225231DD00FEDECC;
+			remoteInfo = Mesto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		176B26222254B1FA00E34D18 /* LocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
+		176B26232254B1FA00E34D18 /* LocationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
+		176B26252254FB8300E34D18 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		17888C2F225231DD00FEDECC /* Mesto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mesto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17888C32225231DD00FEDECC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17888C33225231DD00FEDECC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		17888C35225231DD00FEDECC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		17888C36225231DD00FEDECC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		17888C39225231DD00FEDECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17888C3B225231DE00FEDECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17888C3E225231DE00FEDECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		17888C40225231DE00FEDECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17888C41225231DE00FEDECC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17888C47225231DE00FEDECC /* MestoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MestoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17888C4B225231DE00FEDECC /* MestoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MestoTests.m; sourceTree = "<group>"; };
+		17888C4D225231DE00FEDECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17888C52225231DE00FEDECC /* MestoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MestoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17888C56225231DE00FEDECC /* MestoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MestoUITests.m; sourceTree = "<group>"; };
+		17888C58225231DE00FEDECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17888C652252436B00FEDECC /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		17888C672252452C00FEDECC /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		17888C71225256C400FEDECC /* RestaurantsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestaurantsTableViewController.h; sourceTree = "<group>"; };
+		17888C72225256C400FEDECC /* RestaurantsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestaurantsTableViewController.m; sourceTree = "<group>"; };
+		17888C752252570000FEDECC /* RestaurantTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestaurantTableViewCell.h; sourceTree = "<group>"; };
+		17888C762252570000FEDECC /* RestaurantTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestaurantTableViewCell.m; sourceTree = "<group>"; };
+		17888C7A22525A4C00FEDECC /* LocationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationView.h; sourceTree = "<group>"; };
+		17888C7B22525A4C00FEDECC /* LocationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationView.m; sourceTree = "<group>"; };
+		17888C7D22525BFC00FEDECC /* LocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		17888C7E22525BFC00FEDECC /* LocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		17D565572255F10400CFE0B3 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		17D565592255FF9000CFE0B3 /* ServerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerController.h; sourceTree = "<group>"; };
+		17D5655A2255FF9000CFE0B3 /* ServerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerController.m; sourceTree = "<group>"; };
+		17D5655C225601EA00CFE0B3 /* AFJSONRequestSerializer+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFJSONRequestSerializer+Additions.h"; sourceTree = "<group>"; };
+		17D5655D225601EA00CFE0B3 /* AFJSONRequestSerializer+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFJSONRequestSerializer+Additions.m"; sourceTree = "<group>"; };
+		17D5655F225638A900CFE0B3 /* NavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		17D56560225638A900CFE0B3 /* NavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		17D5656222573F2E00CFE0B3 /* AuthenticatedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthenticatedController.h; sourceTree = "<group>"; };
+		17D5656322573F2E00CFE0B3 /* AuthenticatedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthenticatedController.m; sourceTree = "<group>"; };
+		17D56567225741BB00CFE0B3 /* RestaurantsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestaurantsController.h; sourceTree = "<group>"; };
+		17D56568225741BB00CFE0B3 /* RestaurantsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestaurantsController.m; sourceTree = "<group>"; };
+		17D5656B225780B600CFE0B3 /* Restaurant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		17D5656C225780B600CFE0B3 /* Restaurant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
+		51F05AC50A5D44C2A55B5C1D /* Pods-Mesto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mesto.debug.xcconfig"; path = "Target Support Files/Pods-Mesto/Pods-Mesto.debug.xcconfig"; sourceTree = "<group>"; };
+		612052F7455B325F304C0542 /* Pods_Mesto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mesto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6934176FC8B7BB3803E99848 /* Pods-Mesto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mesto.release.xcconfig"; path = "Target Support Files/Pods-Mesto/Pods-Mesto.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17888C2C225231DD00FEDECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				136CCC3A2C22D48111412D21 /* Pods_Mesto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17888C44225231DE00FEDECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17888C4F225231DE00FEDECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		170CB53C22549BAD00C8039E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				176B26222254B1FA00E34D18 /* LocationService.h */,
+				176B26232254B1FA00E34D18 /* LocationService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		17888C26225231DD00FEDECC = {
+			isa = PBXGroup;
+			children = (
+				17D565572255F10400CFE0B3 /* Test.swift */,
+				176B26252254FB8300E34D18 /* Podfile */,
+				17888C31225231DD00FEDECC /* Mesto */,
+				17888C4A225231DE00FEDECC /* MestoTests */,
+				17888C55225231DE00FEDECC /* MestoUITests */,
+				17888C30225231DD00FEDECC /* Products */,
+				505554B799F8BCDEAE439C0F /* Pods */,
+				1CC779E6CE1F8DC5ACA8E157 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		17888C30225231DD00FEDECC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17888C2F225231DD00FEDECC /* Mesto.app */,
+				17888C47225231DE00FEDECC /* MestoTests.xctest */,
+				17888C52225231DE00FEDECC /* MestoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17888C31225231DD00FEDECC /* Mesto */ = {
+			isa = PBXGroup;
+			children = (
+				17D565652257406E00CFE0B3 /* Controllers */,
+				170CB53C22549BAD00C8039E /* Service */,
+				17888C64225242E400FEDECC /* Screen */,
+				17888C32225231DD00FEDECC /* AppDelegate.h */,
+				17888C33225231DD00FEDECC /* AppDelegate.m */,
+				17888C35225231DD00FEDECC /* ViewController.h */,
+				17888C36225231DD00FEDECC /* ViewController.m */,
+				17888C38225231DD00FEDECC /* Main.storyboard */,
+				17888C3B225231DE00FEDECC /* Assets.xcassets */,
+				17888C3D225231DE00FEDECC /* LaunchScreen.storyboard */,
+				17888C40225231DE00FEDECC /* Info.plist */,
+				17888C41225231DE00FEDECC /* main.m */,
+			);
+			path = Mesto;
+			sourceTree = "<group>";
+		};
+		17888C4A225231DE00FEDECC /* MestoTests */ = {
+			isa = PBXGroup;
+			children = (
+				17888C4B225231DE00FEDECC /* MestoTests.m */,
+				17888C4D225231DE00FEDECC /* Info.plist */,
+			);
+			path = MestoTests;
+			sourceTree = "<group>";
+		};
+		17888C55225231DE00FEDECC /* MestoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				17888C56225231DE00FEDECC /* MestoUITests.m */,
+				17888C58225231DE00FEDECC /* Info.plist */,
+			);
+			path = MestoUITests;
+			sourceTree = "<group>";
+		};
+		17888C64225242E400FEDECC /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				17D56566225740C300CFE0B3 /* General */,
+				17888C7822525A2500FEDECC /* Location */,
+				17888C70225256B100FEDECC /* List */,
+				17888C652252436B00FEDECC /* BaseView.m */,
+				17888C672252452C00FEDECC /* BaseView.h */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		17888C70225256B100FEDECC /* List */ = {
+			isa = PBXGroup;
+			children = (
+				17D5656A225780A600CFE0B3 /* Models */,
+				17888C74225256EA00FEDECC /* Views */,
+				17888C71225256C400FEDECC /* RestaurantsTableViewController.h */,
+				17888C72225256C400FEDECC /* RestaurantsTableViewController.m */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		17888C74225256EA00FEDECC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17888C752252570000FEDECC /* RestaurantTableViewCell.h */,
+				17888C762252570000FEDECC /* RestaurantTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		17888C7822525A2500FEDECC /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				17888C7922525A2B00FEDECC /* Views */,
+				17888C7D22525BFC00FEDECC /* LocationViewController.h */,
+				17888C7E22525BFC00FEDECC /* LocationViewController.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		17888C7922525A2B00FEDECC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17888C7A22525A4C00FEDECC /* LocationView.h */,
+				17888C7B22525A4C00FEDECC /* LocationView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		17D565652257406E00CFE0B3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				17D565592255FF9000CFE0B3 /* ServerController.h */,
+				17D5655A2255FF9000CFE0B3 /* ServerController.m */,
+				17D5655C225601EA00CFE0B3 /* AFJSONRequestSerializer+Additions.h */,
+				17D5655D225601EA00CFE0B3 /* AFJSONRequestSerializer+Additions.m */,
+				17D5656222573F2E00CFE0B3 /* AuthenticatedController.h */,
+				17D5656322573F2E00CFE0B3 /* AuthenticatedController.m */,
+				17D56567225741BB00CFE0B3 /* RestaurantsController.h */,
+				17D56568225741BB00CFE0B3 /* RestaurantsController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		17D56566225740C300CFE0B3 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				17D5655F225638A900CFE0B3 /* NavigationController.h */,
+				17D56560225638A900CFE0B3 /* NavigationController.m */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		17D5656A225780A600CFE0B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				17D5656B225780B600CFE0B3 /* Restaurant.h */,
+				17D5656C225780B600CFE0B3 /* Restaurant.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1CC779E6CE1F8DC5ACA8E157 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				612052F7455B325F304C0542 /* Pods_Mesto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		505554B799F8BCDEAE439C0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51F05AC50A5D44C2A55B5C1D /* Pods-Mesto.debug.xcconfig */,
+				6934176FC8B7BB3803E99848 /* Pods-Mesto.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17888C2E225231DD00FEDECC /* Mesto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17888C5B225231DE00FEDECC /* Build configuration list for PBXNativeTarget "Mesto" */;
+			buildPhases = (
+				2A1AD3593B06867785E632EA /* [CP] Check Pods Manifest.lock */,
+				17888C2B225231DD00FEDECC /* Sources */,
+				17888C2C225231DD00FEDECC /* Frameworks */,
+				17888C2D225231DD00FEDECC /* Resources */,
+				307FE1C7378424D7A4F4DD52 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mesto;
+			productName = Mesto;
+			productReference = 17888C2F225231DD00FEDECC /* Mesto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17888C46225231DE00FEDECC /* MestoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17888C5E225231DE00FEDECC /* Build configuration list for PBXNativeTarget "MestoTests" */;
+			buildPhases = (
+				17888C43225231DE00FEDECC /* Sources */,
+				17888C44225231DE00FEDECC /* Frameworks */,
+				17888C45225231DE00FEDECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17888C49225231DE00FEDECC /* PBXTargetDependency */,
+			);
+			name = MestoTests;
+			productName = MestoTests;
+			productReference = 17888C47225231DE00FEDECC /* MestoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17888C51225231DE00FEDECC /* MestoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17888C61225231DE00FEDECC /* Build configuration list for PBXNativeTarget "MestoUITests" */;
+			buildPhases = (
+				17888C4E225231DE00FEDECC /* Sources */,
+				17888C4F225231DE00FEDECC /* Frameworks */,
+				17888C50225231DE00FEDECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17888C54225231DE00FEDECC /* PBXTargetDependency */,
+			);
+			name = MestoUITests;
+			productName = MestoUITests;
+			productReference = 17888C52225231DE00FEDECC /* MestoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17888C27225231DD00FEDECC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = x;
+				TargetAttributes = {
+					17888C2E225231DD00FEDECC = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					17888C46225231DE00FEDECC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 17888C2E225231DD00FEDECC;
+					};
+					17888C51225231DE00FEDECC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 17888C2E225231DD00FEDECC;
+					};
+				};
+			};
+			buildConfigurationList = 17888C2A225231DD00FEDECC /* Build configuration list for PBXProject "Mesto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17888C26225231DD00FEDECC;
+			productRefGroup = 17888C30225231DD00FEDECC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17888C2E225231DD00FEDECC /* Mesto */,
+				17888C46225231DE00FEDECC /* MestoTests */,
+				17888C51225231DE00FEDECC /* MestoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17888C2D225231DD00FEDECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17888C3F225231DE00FEDECC /* LaunchScreen.storyboard in Resources */,
+				17888C3C225231DE00FEDECC /* Assets.xcassets in Resources */,
+				176B26262254FB8300E34D18 /* Podfile in Resources */,
+				17888C3A225231DD00FEDECC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17888C45225231DE00FEDECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17888C50225231DE00FEDECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A1AD3593B06867785E632EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mesto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		307FE1C7378424D7A4F4DD52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mesto/Pods-Mesto-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mesto/Pods-Mesto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17888C2B225231DD00FEDECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17888C772252570000FEDECC /* RestaurantTableViewCell.m in Sources */,
+				17888C37225231DD00FEDECC /* ViewController.m in Sources */,
+				17D5655E225601EA00CFE0B3 /* AFJSONRequestSerializer+Additions.m in Sources */,
+				17D5656D225780B600CFE0B3 /* Restaurant.m in Sources */,
+				17D5655B2255FF9000CFE0B3 /* ServerController.m in Sources */,
+				17888C73225256C400FEDECC /* RestaurantsTableViewController.m in Sources */,
+				17888C42225231DE00FEDECC /* main.m in Sources */,
+				17D565582255F10400CFE0B3 /* Test.swift in Sources */,
+				17D56569225741BB00CFE0B3 /* RestaurantsController.m in Sources */,
+				17888C7C22525A4C00FEDECC /* LocationView.m in Sources */,
+				17888C34225231DD00FEDECC /* AppDelegate.m in Sources */,
+				17D5656422573F2E00CFE0B3 /* AuthenticatedController.m in Sources */,
+				17888C662252436B00FEDECC /* BaseView.m in Sources */,
+				17D56561225638A900CFE0B3 /* NavigationController.m in Sources */,
+				176B26242254B1FA00E34D18 /* LocationService.m in Sources */,
+				17888C7F22525BFC00FEDECC /* LocationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17888C43225231DE00FEDECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17888C4C225231DE00FEDECC /* MestoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17888C4E225231DE00FEDECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17888C57225231DE00FEDECC /* MestoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17888C49225231DE00FEDECC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17888C2E225231DD00FEDECC /* Mesto */;
+			targetProxy = 17888C48225231DE00FEDECC /* PBXContainerItemProxy */;
+		};
+		17888C54225231DE00FEDECC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17888C2E225231DD00FEDECC /* Mesto */;
+			targetProxy = 17888C53225231DE00FEDECC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17888C38225231DD00FEDECC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17888C39225231DD00FEDECC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17888C3D225231DE00FEDECC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17888C3E225231DE00FEDECC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17888C59225231DE00FEDECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		17888C5A225231DE00FEDECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17888C5C225231DE00FEDECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51F05AC50A5D44C2A55B5C1D /* Pods-Mesto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZVN2M3L66A;
+				INFOPLIST_FILE = Mesto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mk.mesto.www.Mesto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17888C5D225231DE00FEDECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6934176FC8B7BB3803E99848 /* Pods-Mesto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZVN2M3L66A;
+				INFOPLIST_FILE = Mesto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mk.mesto.www.Mesto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		17888C5F225231DE00FEDECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZVN2M3L66A;
+				INFOPLIST_FILE = MestoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mk.mesto.www.MestoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mesto.app/Mesto";
+			};
+			name = Debug;
+		};
+		17888C60225231DE00FEDECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZVN2M3L66A;
+				INFOPLIST_FILE = MestoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mk.mesto.www.MestoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mesto.app/Mesto";
+			};
+			name = Release;
+		};
+		17888C62225231DE00FEDECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZVN2M3L66A;
+				INFOPLIST_FILE = MestoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mk.mesto.www.MestoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mesto;
+			};
+			name = Debug;
+		};
+		17888C63225231DE00FEDECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZVN2M3L66A;
+				INFOPLIST_FILE = MestoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mk.mesto.www.MestoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mesto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17888C2A225231DD00FEDECC /* Build configuration list for PBXProject "Mesto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17888C59225231DE00FEDECC /* Debug */,
+				17888C5A225231DE00FEDECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17888C5B225231DE00FEDECC /* Build configuration list for PBXNativeTarget "Mesto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17888C5C225231DE00FEDECC /* Debug */,
+				17888C5D225231DE00FEDECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17888C5E225231DE00FEDECC /* Build configuration list for PBXNativeTarget "MestoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17888C5F225231DE00FEDECC /* Debug */,
+				17888C60225231DE00FEDECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17888C61225231DE00FEDECC /* Build configuration list for PBXNativeTarget "MestoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17888C62225231DE00FEDECC /* Debug */,
+				17888C63225231DE00FEDECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17888C27225231DD00FEDECC /* Project object */;
+}
